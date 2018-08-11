@@ -1,7 +1,9 @@
-	$(document).ready(function() {
+// JS Doc
+
+    $(document).ready(function() {
 		$('.comment_dialog_hidding_div').hide();
     
-    $(".emojionearea1").emojioneArea({
+          $(".emojionearea1").emojioneArea({
 		pickerPosition: "bottom",
 		tonesStyle: "bullet",
 		saveEmojisAs: "shortname",
