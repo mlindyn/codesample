@@ -61,8 +61,8 @@ class Member extends CI_Controller {
 		 	 if (!empty($_FILES['files'])) {
 				/*
 			  	the code for file upload;
-			  	$upload_success – becomes "true" or "false" if upload was unsuccessful;
-			  	$upload_error – an error message of if upload was unsuccessful;
+			  	$upload_success â€“ becomes "true" or "false" if upload was unsuccessful;
+			  	$upload_error â€“ an error message of if upload was unsuccessful;
 				*/
 				
 				for($x=0; $x<count($_FILES["files"]["tmp_name"]); $x++){
@@ -378,10 +378,6 @@ class Member extends CI_Controller {
 	
 	
 	
-	public function return_true_cb(){
-		return true;
-	}
-	
 	public function new_email($email_address){
 		
 		$user_id = $this->edit_id_hold;
@@ -485,5 +481,10 @@ class Member extends CI_Controller {
 		}
 		
 	}
+	
+	public function return_true_cb(){
+		return true;
+	}
+	
 }
 
